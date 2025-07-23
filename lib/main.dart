@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'My Diet',
         theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
+          colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 206, 112, 6)),
           useMaterial3: true,
         ),
         locale: const Locale('tr', 'TR'),
@@ -125,7 +125,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _addMeal,
-        backgroundColor: Colors.green,
+        backgroundColor: const Color.fromARGB(255, 226, 157, 8),
         foregroundColor: Colors.white,
         child: const Icon(Icons.add),
       ),
