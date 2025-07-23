@@ -1,6 +1,7 @@
 [build]
   publish = "build/web"
-  command = "flutter build web --release"
+  # Pre-built dosyalar için build komutu yok
+  # command = "bash build.sh"
 
 [build.environment]
   FLUTTER_VERSION = "3.27.4"
