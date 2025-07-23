@@ -1,16 +1,67 @@
-# my_diet
+# Diyet Takip Uygulaması
 
-A new Flutter project.
+Flutter ile geliştirilmiş diyet takip uygulaması. Günlük öğünlerinizi kaydedin, fotoğraf ekleyin ve diyet raporlarınızı paylaşın.
 
-## Getting Started
+## Özellikler
 
-This project is a starting point for a Flutter application.
+- 📱 **Çoklu Platform**: Android, iOS, Web desteği
+- 📸 **Fotoğraf Ekleme**: Öğünlerinize fotoğraf ekleyin
+- 📊 **Diyet Raporu**: Günlük diyet raporlarınızı oluşturun
+- 📤 **Paylaşım**: Raporlarınızı diyetisyeninizle paylaşın
+- 🌍 **Türkçe Desteği**: Tam Türkçe arayüz
+- 📅 **Tarih Takibi**: Günlük öğün takibi
 
-A few resources to get you started if this is your first Flutter project:
+## Teknolojiler
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Flutter**: 3.27.4
+- **Dart**: 3.6.2
+- **Provider**: State management
+- **Shared Preferences**: Yerel veri saklama
+- **Image Picker**: Fotoğraf seçimi
+- **Share Plus**: Paylaşım özelliği
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Kurulum
+
+```bash
+# Projeyi klonlayın
+git clone https://github.com/kullaniciadi/diyet-takip.git
+
+# Bağımlılıkları yükleyin
+flutter pub get
+
+# Uygulamayı çalıştırın
+flutter run
+```
+
+## Build
+
+### Android APK
+```bash
+flutter build apk --release
+```
+
+### Web
+```bash
+flutter build web --release
+```
+
+## Deploy
+
+### Netlify
+Bu proje Netlify üzerinde deploy edilmiştir. Otomatik deploy için:
+
+1. GitHub repository'sini Netlify'a bağlayın
+2. Build command: `flutter build web --release`
+3. Publish directory: `build/web`
+
+### Diğer Platformlar
+- **Vercel**: `vercel.json` dosyası hazır
+- **GitHub Pages**: `.github/workflows/deploy.yml` dosyası hazır
+
+## Lisans
+
+MIT License
+
+## İletişim
+
+Proje hakkında sorularınız için issue açabilirsiniz.
