@@ -1,0 +1,14 @@
+[build]
+  publish = "build/web"
+  # Pre-built dosyalar için build komutu yok
+  # command = "bash build.sh"
+
+[build.environment]
+  FLUTTER_VERSION = "3.27.4"
+  NODE_VERSION = "18"
+  NPM_VERSION = "9"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200 
